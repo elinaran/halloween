@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🕸️ Midnight Masquerade — Halloween 2025</title>
+  <meta name="description" content="RSVP, music requests, mood board, and details for our Halloween party."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0a0a; --panel:#121212; --ink:#e8e8e8; --muted:#a4a4a4; --accent:#ff6b00; --accent2:#7e00ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 20% -10%, #1b1325 0%, rgba(10,10,10,0) 60%),radial-gradient(1000px 500px at 110% 10%, #1a0f0f 0%, rgba(10,10,10,0) 60%), var(--bg);color:var(--ink);font-family:Manrope,system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:var(--accent)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(180deg,#1a1a1a 0%, #0d0d0d 100%);box-shadow:0 10px 30px rgba(0,0,0,.5);}
+    .hero{padding:56px 24px 72px;background:url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;filter:saturate(0.9);}
+    .veil{backdrop-filter: blur(4px); background:linear-gradient(180deg, rgba(10,10,10,.55), rgba(10,10,10,.85)); padding:32px;border-radius:16px;}
+    h1{font-family:"Cinzel Decorative",serif;margin:0 0 8px;font-size:clamp(36px,6vw,72px);letter-spacing:1px;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.15);border-radius:999px;font-size:12px;color:var(--muted);margin-bottom:8px}
+    .meta{display:flex;gap:14px;flex-wrap:wrap;color:#ddd;margin:8px 0 18px}
+    .meta span{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);font-size:13px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;cursor:pointer;border-radius:12px;padding:12px 16px;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}
+    .btn.ghost{background:rgba(255,255,255,.06);color:#fff}
+
+    section{margin:40px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width:900px){.grid{grid-template-columns:1.2fr 1fr}}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+    .card h2{margin:0;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.06);font-family:"Cinzel Decorative",serif}
+    .card .body{padding:18px 20px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:8px 10px;border-radius:999px}
+
+    .two{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width:800px){.two{grid-template-columns:1fr 1fr}}
+
+    footer{margin:40px 0 80px;color:var(--muted);text-align:center}
+    .dim{color:var(--muted)}
+    .iban{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background:rgba(255,255,255,.06); padding:10px;border-radius:8px;word-break:break-all}
+    .copy{margin-left:8px}
+    .marquee{overflow:hidden;white-space:nowrap;border-radius:12px;border:1px solid rgba(255,255,255,.06);background:linear-gradient(90deg,rgba(255,107,0,.08),rgba(126,0,255,.08));}
+    .marquee span{display:inline-block;padding:10px 18px;animation:m 24s linear infinite}
+    @keyframes m{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="hero">
+        <div class="veil">
+          <div class="tag">Halloween • Sat, 25 Oct 2025 • 20:00</div>
+          <h1>Midnight Masquerade</h1>
+          <div class="meta">
+            <span>📍 Jomas iela — Jurmala</span>
+            <span>👻 Costumes encouraged</span>
+            <span>🧪 BYOB • Snacks provided</span>
+          </div>
+          <div class="cta">
+            <a class="btn primary" href="#rsvp">RSVP</a>
+            <a class="btn ghost" href="#playlist">Suggest a song</a>
+          </div>
+        </div>
+      </div>
+      <div class="marquee"><span>Dress code: eerie elegance • Prizes for best costume • Secret midnight toast • Be nice to the ghosts • </span></div>
+    </header>
+
+    <section id="rsvp" class="grid">
+      <div class="card">
+        <h2>RSVP & Guest List</h2>
+        <div class="body">
+          <p>Tell us you're coming (plus‑ones welcome), share allergies or food requests, and whether you need parking. You'll receive an email confirmation.</p>
+          <!-- Replace the src below with your Google Form or Tally form share URL -->
+          <div style="position:relative;height:520px;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden">
+            <iframe title="RSVP Form" src="https://tally.so/r/m6g1dN" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Who's Coming</h2>
+        <div class="body">
+          <p class="dim">Embed a live guest list from a Google Sheet or Airtable (read‑only).</p>
+          <!-- Replace the src with your published sheet embed -->
+          <div style="position:relative;height:520px;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden">
+            <iframe title="Guest List" src="https://docs.google.com/spreadsheets/d/e/2PACX-PLACEHOLDER/pubhtml?widget=true&amp;headers=false" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="two">
+      <div class="card">
+        <h2>Donations (Optional)</h2>
+        <div class="body">
+          <p>Help cover decorations & snacks. Bank transfer works best.</p>
+          <div class="iban" id="iban">IBAN: LV00BANK0000000000000 • Reference: <strong>HALLOWEEN</strong></div>
+          <button class="btn ghost copy" onclick="copyIBAN()">Copy IBAN</button>
+          <p class="dim">Prefer card? Use Stripe/PayPal link: <a href="#">payment link</a> (optional).</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Location & Arrival</h2>
+        <div class="body">
+          <p>Doors open 20:00. Quiet hours after 23:00 on the balcony. Ring “Masquerade”.</p>
+          <!-- Replace with your Google Map embed -->
+          <div style="position:relative;height:280px;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden;margin-bottom:12px">
+            <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="pill">🚇 6 min walk from station • 🅿️ Street parking</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playlist" class="two">
+      <div class="card">
+        <h2>Song Requests</h2>
+        <div class="body">
+          <p>Drop bangers, guilty pleasures, or spooky anthems.</p>
+          <!-- Replace with a short music-request form -->
+          <div style="position:relative;height:360px;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden">
+            <iframe title="Music Requests" src="https://tally.so/r/w4gXK2" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Party Playlist</h2>
+        <div class="body">
+          <p class="dim">Collaborative Spotify playlist — add songs directly:</p>
+          <!-- Replace with your Spotify playlist embed (click ••• → Share → Embed) -->
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXd8cOUiye1o2" width="100%" height="360" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="mood" class="two">
+      <div class="card">
+        <h2>Mood Board</h2>
+        <div class="body">
+          <p>Outfit vibes, décor inspiration, and makeup looks.</p>
+          <!-- Replace with your Pinterest/Padlet/Miro embed link -->
+          <div style="position:relative;height:420px;border:1px solid rgba(255,255,255,.06);border-radius:12px;overflow:hidden">
+            <iframe title="Mood Board" src="https://assets.pinterest.com/ext/embed.html?id=99360735500124556" width="100%" height="100%" frameborder="0" scrolling="yes"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>FAQ</h2>
+        <div class="body">
+          <ul>
+            <li><strong>Food & allergies:</strong> Note them in RSVP; we'll label dishes.</li>
+            <li><strong>Dress code:</strong> Eerie elegance (interpret freely).</li>
+            <li><strong>Photos:</strong> Yes, but ask before posting faces.</li>
+            <li><strong>Noise:</strong> Balcony quiet hours after 23:00.</li>
+            <li><strong>Smoking:</strong> Outside, courtyard only.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>After the Party — Photo Drop</h2>
+      <div class="body">
+        <p class="dim">Add your photos here (Google Drive upload folder):</p>
+        <!-- Replace with your Drive upload link -->
+        <a class="btn primary" href="#">Upload your photos</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2025 Midnight Masquerade • Made with ❤️ and a little witchcraft</div>
+      <div class="dim" style="margin-top:8px;font-size:12px">We only use your RSVP details to organize this party. Data deleted after the event.</div>
+    </footer>
+  </div>
+
+  <script>
+    function copyIBAN(){
+      const text = document.getElementById('iban').innerText.replace('IBAN: ','').split(' • ')[0];
+      navigator.clipboard.writeText(text).then(()=>{
+        alert('IBAN copied to clipboard');
+      });
+    }
+  </script>
+</body>
+</html>
